@@ -1,4 +1,4 @@
-package exercicios;
+package Exercicios;
 
 /**
  * 
@@ -14,13 +14,13 @@ import java.util.Scanner;
 public class valorIMC {
 
 	public static void main(String[] args) {
-		//vari·veis
+		//vari√°veis
 		double peso, altura, valor;
 		//Objeto leitor 
 		Scanner leitor = new Scanner(System.in);
 		//obejto formatador 
 		DecimalFormat formatador = new DecimalFormat ("0.00");
-		System.out.println("C·culo do IMC");
+		System.out.println("C√°culo do IMC");
 		//entrada
 		System.out.print("Digite seu peso: ");
 		peso = leitor.nextDouble();
@@ -28,10 +28,10 @@ public class valorIMC {
 		altura = leitor.nextDouble();
 		//processamento
 		valor = peso /(altura * altura);
-		//saÌda
+		//sa√≠da
 		System.out.println("IMC: " + formatador.format(valor));
 		if (valor < 18.5) {
-			System.out.println("Magreza PatÛlogica");
+			System.out.println("Magreza Pat√≥logica");
 		}else if(valor >= 20 && valor < 25) {
 			System.out.println("Peso Normal");
 		}else if (valor <= 25){
